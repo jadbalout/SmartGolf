@@ -11,6 +11,13 @@ The balls "evolve", using the genetic algorithm, to find the best path to its ta
   <img src="https://jadbalout.com/smartgolf/img1.png" alt="sreenshot" />
 </h3>
 
+To-do
+------
+
+* [ ] Reset Simulation.
+* [ ] Maybe increase the fitness of the objects who took less fuel(frames) to complete.
+* [ ] Redesign target and golf balls.
+
 [p5.js]:https://p5js.org/
 [Daniel Shiffman]:http://shiffman.net/
 [The Nature of Code]:http://natureofcode.com/

@@ -1,5 +1,5 @@
 class Population {
-    constructor(targetOrds, mutationRate, populationCount, lifespan) {
+    constructor(targetOrds, mutationRate, populationCount, lifespan, obstacles=[]) {
         this.generation = 0;
         this.target = targetOrds;
         this.mutationRate = mutationRate;
@@ -11,6 +11,7 @@ class Population {
         this.matingPool = [];
         this.best = {};
         this.lifespan = lifespan;
+        this.obstacles = obstacles;
         this.calcFitness();
     }
 
@@ -22,10 +23,18 @@ class Population {
         return i;
     }
 
+    getIndividualsBlocked() {
+        var i =0;
+        this.population.forEach(function(individual) {
+            i += int(individual.blocked);
+        });
+        return i;
+    }
+
     updateFrame(counter) {
         var self = this;
         this.population.forEach(function(individual){
-            individual.updateFrame(self.target, counter);
+            individual.updateFrame(self.target, self.obstacles, counter);
             individual.draw();
         });
       }
