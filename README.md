@@ -8,7 +8,7 @@ The balls "evolve", using the genetic algorithm, to find the best path to its ta
 * [Play the simulation now]
 
 <h3 align="center">
-  <img src="https://jadbalout.com/smartgolf/img1.png" alt="sreenshot" />
+  <img src="https://jadbalout.com/smartgolf/img1.png?v1" alt="sreenshot" />
 </h3>
 
 To-do
