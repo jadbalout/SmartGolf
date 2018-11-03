@@ -14,7 +14,7 @@ The balls "evolve", using the genetic algorithm, to find the best path to its ta
 To-do
 ------
 
-* [ ] Reset Simulation.
+* [ ] Reset & speed btns.
 * [ ] Maybe increase the fitness of the objects who took less fuel(frames) to complete.
 * [ ] Redesign target and golf balls.
 
